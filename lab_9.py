@@ -1,6 +1,6 @@
-def decoder(message):
+def decoder(num):
     result = ''
-    for digit in message:
+    for digit in num:
         new_digit = str((int(digit) - 3) % 10)
         result += new_digit
     return result
