@@ -12,11 +12,11 @@ def start():
         option = int(input("\nPlease enter an option: "))
         if option == "1":
             num = int(input("Please enter your password to encode: "))
-            encode(num)
+            encoded = encode(num)
             print("Your password has been encoded and stored!")
         elif option == "2":
-            decoder(new_number)
-            print(f"The encoded password is {new_number}, and the original password is {result}.")
+            original = decoder(encoded)
+            print(f"The encoded password is {encoded}, and the original password is {original}.")
         elif option == "3":
             break
 def menu():
